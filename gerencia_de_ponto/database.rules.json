@@ -1,0 +1,12 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "pontos": {
+      ".indexOn": ["timestamp","userId"]
+    },
+    "horarios": {
+      ".indexOn": ["userId"]
+    }
+  }
+}

@@ -1,5 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gerencia_de_ponto/pages/login_page.dart';
 
 class MyAppbar extends StatelessWidget implements PreferredSizeWidget {
   const MyAppbar({super.key});
@@ -39,6 +41,13 @@ class MyAppbar extends StatelessWidget implements PreferredSizeWidget {
               height: 40.0,
             ),
           ),
+          onTap: () async {
+            await FirebaseAuth.instance.signOut();
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            );
+          },
         ),
       ],
     );

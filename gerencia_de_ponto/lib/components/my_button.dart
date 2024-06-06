@@ -11,9 +11,9 @@ class MyButton extends StatelessWidget {
     return SizedBox(
       width: 200.0,
       height: 65.0,
+
       child: OutlinedButton(
         onPressed: onTap,
-
         style: OutlinedButton.styleFrom(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),

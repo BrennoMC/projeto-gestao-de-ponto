@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "306983096617",
+    "firebase_url": "https://controledeponto-6d11c-default-rtdb.firebaseio.com",
+    "project_id": "controledeponto-6d11c",
+    "storage_bucket": "controledeponto-6d11c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306983096617:android:3723f8223105d28a83a738",
+        "android_client_info": {
+          "package_name": "com.example.aula6"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPlqvBEcfw2Zoc6ucqvbNvjjjqOgI_Orc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306983096617:android:f743b1dd2866e2d383a738",
+        "android_client_info": {
+          "package_name": "com.example.controledeponto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPlqvBEcfw2Zoc6ucqvbNvjjjqOgI_Orc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306983096617:android:bb585de34e224a9f83a738",
+        "android_client_info": {
+          "package_name": "com.example.gerencia_de_ponto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPlqvBEcfw2Zoc6ucqvbNvjjjqOgI_Orc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306983096617:android:0e953f4789d4821483a738",
+        "android_client_info": {
+          "package_name": "com.example.location"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPlqvBEcfw2Zoc6ucqvbNvjjjqOgI_Orc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306983096617:android:68fd04203674bda383a738",
+        "android_client_info": {
+          "package_name": "com.example.notification2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPlqvBEcfw2Zoc6ucqvbNvjjjqOgI_Orc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

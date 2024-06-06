@@ -1,19 +1,39 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gerencia_de_ponto/blocs/auth_service.dart';
 import 'package:gerencia_de_ponto/components/my_button.dart';
-
+import 'package:gerencia_de_ponto/firebase_options.dart';
+import 'package:gerencia_de_ponto/pages/home_page.dart';
 import '../components/my_textfield.dart';
 import '../main.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
 
+  FirebaseAuth auth = FirebaseAuth.instance;
+
   //obter email e senha do usuario
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
   //função para logar
-  void signInUser() {}
+  void signInUser(BuildContext context) async {
+    final message = await AuthService().login(
+      email: usernameController.text,
+      password: passwordController.text
+    );
+
+    print("message = $message");
+
+    if(message!.contains('Success')) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => HomePage()),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +88,7 @@ class LoginPage extends StatelessWidget {
 
               const SizedBox(height: 30.0),
 
-              MyButton(onTap: signInUser),
+              MyButton(onTap: () => signInUser(context)),
             ],
           ),
         ),
