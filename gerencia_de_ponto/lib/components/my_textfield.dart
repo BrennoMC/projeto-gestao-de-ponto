@@ -25,7 +25,7 @@ class MyTextfield extends StatelessWidget {
         Container(
           width: 300,
           height: 40,
-          margin: EdgeInsets.symmetric(horizontal: 45, vertical: 13),
+          margin: EdgeInsets.symmetric(horizontal: 55, vertical: 12),
           decoration: BoxDecoration(
             boxShadow: const [
               BoxShadow(
