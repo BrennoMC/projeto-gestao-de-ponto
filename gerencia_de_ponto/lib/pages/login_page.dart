@@ -3,9 +3,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gerencia_de_ponto/blocs/auth_service.dart';
-import 'package:gerencia_de_ponto/components/my_button.dart';
+import 'package:gerencia_de_ponto/components/my_button.dart' as components;
 import 'package:gerencia_de_ponto/firebase_options.dart';
-import 'package:gerencia_de_ponto/pages/home_page.dart';
+import 'package:gerencia_de_ponto/pages/home_page.dart' as home;
 import '../components/my_textfield.dart';
 import '../main.dart';
 
@@ -30,7 +30,7 @@ class LoginPage extends StatelessWidget {
     if(message!.contains('Success')) {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => HomePage()),
+        MaterialPageRoute(builder: (context) => home.HomePage()),
       );
     }
   }
@@ -88,7 +88,7 @@ class LoginPage extends StatelessWidget {
 
               const SizedBox(height: 30.0),
 
-              MyButton(onTap: () => signInUser(context)),
+              components.MyButton(onTap: () => signInUser(context)),
             ],
           ),
         ),
