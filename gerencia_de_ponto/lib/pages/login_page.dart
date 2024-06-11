@@ -3,7 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gerencia_de_ponto/blocs/auth_service.dart';
-import 'package:gerencia_de_ponto/components/my_button.dart';
+import '../components/my_button.dart' as customButton;
 import 'package:gerencia_de_ponto/firebase_options.dart';
 import 'package:gerencia_de_ponto/pages/home_page.dart';
 import '../components/my_textfield.dart';
@@ -87,8 +87,7 @@ class LoginPage extends StatelessWidget {
               ),
 
               const SizedBox(height: 30.0),
-
-              MyButton(onTap: () => signInUser(context)),
+              customButton.MyButton(onTap: () => signInUser(context)),
             ],
           ),
         ),

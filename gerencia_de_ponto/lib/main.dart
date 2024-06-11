@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:gerencia_de_ponto/pages/home_page.dart';
 import 'package:gerencia_de_ponto/pages/login_page.dart';
 
 import 'firebase_options.dart';
@@ -24,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }
