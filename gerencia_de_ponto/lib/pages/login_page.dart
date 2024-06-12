@@ -1,10 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gerencia_de_ponto/blocs/auth_service.dart';
 import 'package:gerencia_de_ponto/components/my_button.dart' as components;
-import 'package:gerencia_de_ponto/firebase_options.dart';
 import 'package:gerencia_de_ponto/pages/home_page.dart' as home;
 import '../components/my_textfield.dart';
 import '../main.dart';
@@ -73,6 +71,7 @@ class LoginPage extends StatelessWidget {
 
               const SizedBox(height: 10.0),
 
+              /*
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 40.0),
                 child: Row(
@@ -85,10 +84,18 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
               ),
+              */
+
 
               const SizedBox(height: 30.0),
-
-              components.MyButton(onTap: () => signInUser(context)),
+              components.MyButton(
+                onTap: () => signInUser(context),
+                fontSize: 20,
+                sizedWidth: 200,
+                sizedHeight: 35,
+                text: "Entrar",
+                backgroundColor: ColorConstants.buttonColor,
+              ),
             ],
           ),
         ),

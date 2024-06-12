@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gerencia_de_ponto/components/my_appbar.dart';
+import 'package:gerencia_de_ponto/pages/report_page.dart' as report;
 import 'package:intl/intl.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:gerencia_de_ponto/blocs/auth_service.dart';
@@ -282,7 +283,10 @@ class _HomePageState extends State<HomePage> {
                       text: 'GERAR RELATÓRIO',
                       color: Color(0xFF1A1C3D),
                       onPressed: () {
-                        // lógica para gerar relatório
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => report.ReportPage()),
+                        );
                       },
                     ),
                   ),
