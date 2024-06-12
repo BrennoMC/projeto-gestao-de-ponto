@@ -33,4 +33,6 @@ class ColorConstants {
   static const primaryColor = Color(0xFFFFAA01);
   static const inputLogin = Color(0xFFFFBF41);
   static const buttonColor = Color(0xFF2F48A5);
+  static const backgroundScreen = Color(0xFFEEF1F9);
+  static const inputSecondary = Color(0xFF242E54);
 }
